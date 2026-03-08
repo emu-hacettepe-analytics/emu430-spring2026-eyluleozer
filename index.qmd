@@ -1,5 +1,5 @@
 ---
-title: "Welcome to My Analytics Lab"
+title: "Eylul's Analytics Lab"
 sidebar: false 
 ---
 
