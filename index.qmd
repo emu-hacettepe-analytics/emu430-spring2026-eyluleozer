@@ -3,10 +3,11 @@ title: "Welcome to My Analytics Lab"
 sidebar: false 
 ---
 
-Hello! My name is xxx xxxx.
+Hello! My name is Eylul.
 
-This is my personal webpage.
+I am an industrial engineering student at Hacettepe University.
 
-Please stay tuned to follow my works on data analytics, blog posts, and more.
+This website was created for the EMU430 course. Here you will find my coursework,
+assignments, and other projects related to data analytics.
 
-This is our template.
+Please stay tuned for updates throughout the semester.
