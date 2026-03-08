@@ -5,26 +5,23 @@ sidebar: false
 
 # Education
 
--   B.S., Industrial Engineering, Hacettepe University, Turkey, 20xx - ongoing.
-
-# Work Experience
+-   B.S., Industrial Engineering, Hacettepe University, Turkey, 2021 - ongoing.
 
 ## Employements
 
-1.  Firm xxx, position xx, year xxx
+1.  Detaysoft, Junior BPC consultant, September 2025 - ongoing
 
-2.  Firm yyy, position yyy, year yyy
 
 ## Internships
 
-1.  Firm aaa, position xx, year xxx
+1.  Detaysoft, BI intern, 2025
 
-2.  Firm bbb, position yyy, year yyy
-
-# Projects
 
 # Competencies
 
-R, Quarto, Git, Python
+R, Quarto, Git, Python 
 
 # Hobbies
+Reading, listening to music, learning new technologies, and self-development
+
+
