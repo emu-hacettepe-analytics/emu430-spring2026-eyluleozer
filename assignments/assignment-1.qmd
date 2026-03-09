@@ -1,15 +1,121 @@
 ---
 title: "Assignment 1"
 ---
+Assignment 1
 
-# Assignment 1
-
-```{r}
+{r}
 1 + 1
-```
 
 My first assignment has two parts.
 
-## (a)
+(a)
 
-## (b)
+##Video Summary
+
+I watched the video "Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Kerem Demirtaş & Erdi Daşdemir".
+
+In this video, the speakers discuss the relationship between industrial engineering and data science. They explain that industrial engineers already have strong analytical thinking, statistics, optimization, and problem-solving skills, which are very valuable in data science. The discussion also highlights that success in data science requires not only technical knowledge but also the ability to understand real-world problems and communicate results effectively.
+
+Question:
+Why is the data collection and preparation stage important in the data science workflow?
+
+Answer:
+The data collection and preparation stage is important because raw data is usually incomplete, inconsistent, or contains missing values. In this stage, data is cleaned, transformed, and combined from different sources to make it suitable for analysis. Ensuring data quality at this stage helps produce more reliable analysis and better model performance in later stages.
+
+Question:
+Which of the following is a key task in the data collection and preparation stage of the data science workflow?
+
+
+A) Deploying the model to production
+B) Cleaning and transforming raw data
+C) Evaluating model performance
+D) Defining the research problem
+
+
+Correct Answer:
+B) Cleaning and transforming raw data
+
+
+
+
+(b)
+
+R Analysis
+
+{r}
+library(dslabs)
+library(dplyr)
+
+{r}
+my_first <- "Eylul"
+my_birth_year <- 2002
+
+{r}
+k <- (nchar(my_first) + my_birth_year) %% 15 + 8
+k
+
+{r}
+data("polls_us_election_2016")
+data <- polls_us_election_2016
+
+Display k rows from the original data
+
+{r}
+if (k %% 2 == 0) {
+  head(data, k)
+} else {
+  tail(data, k)
+}
+
+Total number of NA values in the entire dataset
+
+{r}
+sum(is.na(data))
+
+Number of NA values per column (top 8)
+
+{r}
+na_columns <- sort(colSums(is.na(data)), decreasing = TRUE)
+head(na_columns, 8)
+
+Replace NA values and create a new dataset
+
+{r}
+new_data <- data
+
+{r}
+num_cols <- sapply(new_data, is.numeric)
+
+new_data[num_cols] <- lapply(new_data[num_cols], function(x){
+  x[is.na(x)] <- my_birth_year + k
+  x
+})
+
+{r}
+char_cols <- sapply(new_data, function(x) is.character(x) | is.factor(x))
+
+new_data[char_cols] <- lapply(new_data[char_cols], function(x){
+  x <- as.character(x)
+  x[is.na(x)] <- paste0(my_first,"_",k)
+  x
+})
+
+Display k rows from the new dataset
+
+{r}
+if (k %% 2 == 0) {
+  head(new_data, k)
+} else {
+  tail(new_data, k)
+}
+
+Remaining NA values in the new dataset
+
+{r}
+sum(is.na(new_data))
+
+Check if any NA values remain
+
+{r}
+anyNA(new_data)
+
