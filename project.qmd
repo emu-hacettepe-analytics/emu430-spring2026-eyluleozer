@@ -3,10 +3,10 @@ title: "Our Course Project"
 sidebar: false 
 ---
 
-I'm honored to be a member of the \[group name\] project team.
+I'm honored to be a member of the DataFlame project team.
 
-Below, you'll find a brief summary of our project. To access a detailed project description, please go to [https://\[your-project-url\]](#0){.uri}.
+Below, you'll find a brief summary of our project. To access a detailed project description, please go to [DataFlame Project Website](https://emu-hacettepe-analytics.github.io/emu430-fall2024-team-dataflame/).
 
 **Summary**
 
-\[provide a biref summary of your project\]
+Our project analyzes forest fire statistics in Turkey between 1988 and 2024. We use official data from the General Directorate of Forestry (OGM). The project focuses on yearly changes in the number of forest fires, burned forest areas, and the main causes of fires. Our main aim is to understand long-term fire trends and highlight the importance of forest fire prevention.
