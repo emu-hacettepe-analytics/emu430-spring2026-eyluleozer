@@ -1,5 +1,5 @@
 ---
-title: "Our Course Project"
+title: "Course Project"
 sidebar: false 
 ---
 
